@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { fireEvent, render, screen } from "@testing-library/react";
 import ForecastSummary from "../../components/ForecastSummary";
 import { ThemeContextProvider } from "../../contexts/ThemeContext";
 
@@ -52,5 +52,23 @@ describe("ForecastSummary", () => {
     );
     expect(getByTestId("forecast-icon")).toHaveClass("forecast-summary__icon");
     expect(getByText("22°C")).toHaveClass("forecast-summary__temperature");
+  });
+
+  it("click handler is called", () => {
+    render(
+      <ThemeContextProvider>
+        <ForecastSummary
+          date={validProps.date}
+          description={validProps.description}
+          icon={validProps.icon}
+          temperature={validProps.temperature}
+          onSelect={validProps.onSelect}
+          selectedDate={validProps.selectedDate}
+        />
+      </ThemeContextProvider>,
+    );
+    const button = screen.getByRole("button");
+    fireEvent.click(button);
+    expect(validProps.onSelect).toHaveBeenCalled();
   });
 });
