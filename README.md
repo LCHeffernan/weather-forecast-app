@@ -2,7 +2,12 @@
 ___
 ## Description.
 This was my first frontend project which was bootstrapped with [create React App](https://github.com/facebook/create-react-app) which was tested using React Testing Library (RTL), the tests can be found in the tests folder.
-The app renders the 5 day weather forecast for a particular city using data, descriptions and React icons. Given more time I would like to add a feature to enable the user to render additional cities to the app at the same time.
+The app renders the 5 day weather forecast for a particular city using data, descriptions and React icons. The app design is responsive to the user's screen and has a light and dark mode theme.
+
+![Mobile screenshot in light mode](/images/screenshot_weather_app_mobile.jpeg?raw=true "App on mobile screen in light mode.")
+![Laptop screenshot in dark mode](/images/screenshot_weather_app_laptop.png?raw=true "App on laptop screen in dark mode.")
+
+Given more time I would like to add a feature to enable the user to render additional cities to the app at the same time.
 ___
 
 ## Download and setup.
