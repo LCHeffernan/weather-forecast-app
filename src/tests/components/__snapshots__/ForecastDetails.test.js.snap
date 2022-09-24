@@ -13,23 +13,24 @@ exports[`ForecastDetails renders correctly 1`] = `
     <div
       class="forecast-details__max-temperature"
     >
-      Max Temperature:  22°C
+      Max Temperature:
+        22°C
     </div>
     <div
       class="forecast-details__min-temperature"
     >
-      Min Temperature:  12°C
+      Min Temperature: 12°C
     </div>
     <div
       class="forecast-details__humidity"
     >
-      Humidity:  30%
+      Humidity: 30%
     </div>
     <div
       class="forecast-details__wind"
       data-testid="wind-icon"
     >
-      Wind:  13mph  
+      Wind: 13mph
       <svg
         fill="currentColor"
         height="1em"

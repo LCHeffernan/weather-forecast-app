@@ -8,13 +8,15 @@ input {
   margin-right:2px;
 }
 
-.search-form.light button, .search-form.light input {
+.search-form.light button,
+.search-form.light input {
   background-color: white;
   border-color: black;
   color: black;
   }
 
-.search-form.dark button, .search-form.dark input {
+.search-form.dark button,
+.search-form.dark input {
   background-color: black;
   border-color: white;
   color: white;

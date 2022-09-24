@@ -25,7 +25,7 @@ describe("ForecastSummaries", () => {
         },
       },
     ],
-    onForecastSelect: () => {},
+    onForecastSelect: jest.fn(),
     selectedDate: 1111111,
   };
 

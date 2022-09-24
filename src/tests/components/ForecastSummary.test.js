@@ -12,7 +12,7 @@ describe("ForecastSummary", () => {
       min: 12,
       max: 22,
     },
-    onSelect: () => {},
+    onSelect: jest.fn(),
     selectedDate: 1111111,
   };
 

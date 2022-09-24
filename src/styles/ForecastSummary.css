@@ -1,4 +1,4 @@
-.forecast-summary{
+.forecast-summary {
   background-color: white;
   padding: 8px;
   margin: 8px;
@@ -11,7 +11,8 @@
   text-align: center;
 }
 
-.forecast-summary.selected.light, .forecast-summary.selected.dark {
+.forecast-summary.selected.light,
+.forecast-summary.selected.dark {
   border-style: double;
   border-radius: 4px;
   border-width: 6px;

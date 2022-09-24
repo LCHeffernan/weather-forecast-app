@@ -5,15 +5,24 @@ import { useThemeContext } from "../contexts/ThemeContext";
 
 import "../styles/ForecastSummary.css";
 
-const ForecastSummary = (props) => {
-  const {
-    date, temperature, description, icon, onSelect, selectedDate,
-  } = props;
+const ForecastSummary = ({
+  date,
+  temperature,
+  description,
+  icon,
+  onSelect,
+  selectedDate,
+}) => {
   const formattedDate = new Date(date).toDateString();
   const { useDarkTheme } = useThemeContext();
 
   return (
-    <div className={`forecast-summary ${date === selectedDate ? "selected" : "unselected"} ${useDarkTheme ? "dark" : "light"}`} data-testid="forecast-summary">
+    <div
+      className={`forecast-summary ${
+        date === selectedDate ? "selected" : "unselected"
+      } ${useDarkTheme ? "dark" : "light"}`}
+      data-testid="forecast-summary"
+    >
       <div className="forecast-summary__date">{formattedDate}</div>
       <div className="forecast-summary__icon" data-testid="forecast-icon">
         <WeatherIcon name="owm" iconId={icon} />
@@ -23,7 +32,9 @@ const ForecastSummary = (props) => {
         &deg;C
       </div>
       <div className="forecast-summary__description">{description}</div>
-      <button type="button" onClick={() => onSelect(date)}>More Details</button>
+      <button type="button" onClick={() => onSelect(date)}>
+        More Details
+      </button>
     </div>
   );
 };

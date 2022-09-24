@@ -4,14 +4,15 @@ import { useThemeContext } from "../contexts/ThemeContext";
 
 import "../styles/LocationDetails.css";
 
-const LocationDetails = (props) => {
-  const { city, country, errorMessage } = props;
+const LocationDetails = ({ city, country, errorMessage }) => {
   const { useDarkTheme } = useThemeContext();
 
   return errorMessage ? (
     <h1>{errorMessage}</h1>
   ) : (
-    <h1 className={`location-details ${useDarkTheme ? "dark" : "light"}`}>{city ? `${city}, ${country}` : ""}</h1>
+    <h1 className={`location-details ${useDarkTheme ? "dark" : "light"}`}>
+      {city ? `${city}, ${country}` : ""}
+    </h1>
   );
 };
 
