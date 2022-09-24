@@ -1,14 +1,18 @@
 .forecast-summary {
   background-color: white;
   padding: 8px;
-  margin: 8px;
-  width: 130px;
-  height:100px;
+  margin: 8px auto;
+  width: fit-content;
+  height:auto;
   border-style: solid;
   border-color: black;
   border-radius: 4px;
   border-width: 2px;
   text-align: center;
+}
+
+.weather-icon {
+  font-size: 30px;
 }
 
 .forecast-summary.selected.light,
@@ -51,3 +55,24 @@
 button:hover {
   cursor: pointer;
 }
+
+/* MEDIA QUERIES */
+/* layout for tablet */
+@media screen and (min-width: 768px) {
+  .forecast-summary {
+    font-size: 20px;
+  }
+  .weather-icon {
+    font-size: 38px;
+  }
+} 
+
+/* layout for laptop */
+@media screen and (min-width: 1200px) {
+  .forecast-summary {
+    font-size: 24px;
+  }
+  .weather-icon {
+    font-size: 50px;
+  }
+} 

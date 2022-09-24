@@ -13,7 +13,8 @@ const ForecastSummary = ({
   onSelect,
   selectedDate,
 }) => {
-  const formattedDate = new Date(date).toDateString();
+  const formattedDate = new Date(date).toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
+
   const { useDarkTheme } = useThemeContext();
 
   return (
@@ -23,12 +24,20 @@ const ForecastSummary = ({
       } ${useDarkTheme ? "dark" : "light"}`}
       data-testid="forecast-summary"
     >
-      <div className="forecast-summary__date">{formattedDate}</div>
-      <div className="forecast-summary__icon" data-testid="forecast-icon">
-        <WeatherIcon name="owm" iconId={icon} />
+      <div className="forecast-summary__date" style={{ whiteSpace: 'pre' }}>
+        {
+      `${formattedDate}
+      `
+        }
       </div>
-      <div className="forecast-summary__temperature">
-        {temperature.max}
+      <div className="forecast-summary__icon" data-testid="forecast-icon" style={{ whiteSpace: 'pre' }}>
+        <WeatherIcon className="weather-icon" name="owm" iconId={icon} />
+      </div>
+      <div className="forecast-summary__temperature" style={{ whiteSpace: 'pre' }}>
+        {
+          `
+${temperature.max}`
+        }
         &deg;C
       </div>
       <div className="forecast-summary__description">{description}</div>

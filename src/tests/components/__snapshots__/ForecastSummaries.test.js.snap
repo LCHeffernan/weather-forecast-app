@@ -11,22 +11,27 @@ exports[`ForecastSummaries renders correctly 1`] = `
     >
       <div
         class="forecast-summary__date"
+        style="white-space: pre;"
       >
-        Thu Jan 01 1970
+        Thu, 1 Jan
+      
       </div>
       <div
         class="forecast-summary__icon"
         data-testid="forecast-icon"
+        style="white-space: pre;"
       >
         <i
-          class="wi wi-day-sunny"
+          class="wi wi-day-sunny weather-icon"
           name="owm"
         />
       </div>
       <div
         class="forecast-summary__temperature"
+        style="white-space: pre;"
       >
-        22°C
+        
+22°C
       </div>
       <div
         class="forecast-summary__description"
@@ -45,22 +50,27 @@ exports[`ForecastSummaries renders correctly 1`] = `
     >
       <div
         class="forecast-summary__date"
+        style="white-space: pre;"
       >
-        Thu Jan 01 1970
+        Thu, 1 Jan
+      
       </div>
       <div
         class="forecast-summary__icon"
         data-testid="forecast-icon"
+        style="white-space: pre;"
       >
         <i
-          class="wi wi-day-snow"
+          class="wi wi-day-snow weather-icon"
           name="owm"
         />
       </div>
       <div
         class="forecast-summary__temperature"
+        style="white-space: pre;"
       >
-        24°C
+        
+24°C
       </div>
       <div
         class="forecast-summary__description"

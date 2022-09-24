@@ -23,6 +23,9 @@
   left: 0;
   right: 0;
   bottom: 0;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.8px;
   border-radius: 34px;
   background-color: white;
   -webkit-transition: .4s;
@@ -43,6 +46,7 @@
   
 input:checked + .slider {
   background-color: black;
+  border-color: white;
 }
   
 input:focus + .slider {

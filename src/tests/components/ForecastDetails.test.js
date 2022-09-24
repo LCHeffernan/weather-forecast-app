@@ -33,7 +33,7 @@ describe("ForecastDetails", () => {
       </ThemeContextProvider>,
     );
 
-    expect(getByText("Thu Jan 01 1970")).toHaveClass("forecast-details__date");
+    expect(getByText("Thu, 1 Jan")).toHaveClass("forecast-details__date");
     expect(getByText("Max Temperature: 22°C")).toHaveClass("forecast-details__max-temperature");
     expect(getByText("Min Temperature: 12°C")).toHaveClass("forecast-details__min-temperature");
     expect(getByText("Wind: 13mph")).toHaveClass("forecast-details__wind");

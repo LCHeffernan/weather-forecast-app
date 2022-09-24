@@ -1,4 +1,5 @@
 .forecast-summaries {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }

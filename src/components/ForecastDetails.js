@@ -18,7 +18,8 @@ const ForecastDetails = ({ forecast }) => {
     date, temperature, humidity, wind,
   } = forecast;
   const { useDarkTheme } = useThemeContext();
-  const formattedDate = new Date(date).toDateString();
+  const formattedDate = new Date(date).toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
+
   let arrowDirection = <BsArrowUpCircle />;
   if (wind.direction === "sw" || wind.direction === "ssw") {
     arrowDirection = <BsArrowUpRightCircle />;

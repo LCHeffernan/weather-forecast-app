@@ -8,7 +8,7 @@ exports[`ForecastDetails renders correctly 1`] = `
     <div
       class="forecast-details__date"
     >
-      Thu Jan 01 1970
+      Thu, 1 Jan
     </div>
     <div
       class="forecast-details__max-temperature"
