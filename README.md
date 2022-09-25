@@ -5,6 +5,9 @@ This was my first frontend project which was bootstrapped with [create React App
 The app renders the 5 day weather forecast for a particular city using data, descriptions and React icons. The app design is responsive to the user's screen and has a light and dark mode theme.
 
 ![Mobile screenshot in light mode](/images/screenshot_weather_app_mobile.jpeg?raw=true "App on mobile screen in light mode.")
+
+<img src="/images/screenshot_weather_app_mobile.jpeg" width="195" height="325" />
+
 ![Laptop screenshot in dark mode](/images/screenshot_weather_app_laptop.png?raw=true "App on laptop screen in dark mode.")
 
 Given more time I would like to add a feature to enable the user to render additional cities to the app at the same time.
